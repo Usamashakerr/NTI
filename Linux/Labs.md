@@ -1,4 +1,17 @@
-
+1. sudo useradd -c 'osama shaker' -m shaker , then to change the password you can do it through "echo "shaker:islam" | sudo chpasswd" or go to the root then write "passwd shaker"
+2. sudo adduser -c 'Bad User' -m baduser ,then we can change the password through 'echo "baduser:badpassword" | sudo chpasswd' or from the root
+3. sudo groupadd -g 30000 pgroup
+   sudo usermod -aG pgroup shaker
+4. sudo groupadd bad group
+   sudo usermod -aG badgroup shaker
+5.   sudo usermod -aG pgroup shaker
+6.   echo "shaker:password" | sudo chpasswd
+7.   sudo passwd -x 30 shaker
+8.   sudo usermod -L baduser
+9.   sudo deluser baduser
+10.    sudo delgroup badgroup
+11.  sudo chown 400 /home/myteam
+12.  
 14. a .![image](https://github.com/user-attachments/assets/004cca67-b518-41a4-89ff-eee91e0edd35)
     b. ![image](https://github.com/user-attachments/assets/54cf9e16-f9df-4903-ae6e-40f4b67d7666)
     c. 666 for a file , and 777 for a directory
