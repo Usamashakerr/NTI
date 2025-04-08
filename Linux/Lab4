@@ -19,5 +19,6 @@
 13.sudo apt search nginx
 14.sudo apt remove vim 
 15.wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.23.tar.xz
-16.
+16.sudo curl https://www.google.com -o google.html
+17.
 
