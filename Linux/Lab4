@@ -15,4 +15,9 @@
 9. tar -cvf /tmp/archive.tar  /etc/ssh
 10. gzip ~/processes.txt 
 11.ls -lh ~/processes.txt ~/processes.txt.gz
-12.
+12. sudo apt install htop
+13.sudo apt search nginx
+14.sudo apt remove vim 
+15.wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.23.tar.xz
+16.
+
