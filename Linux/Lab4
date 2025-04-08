@@ -1,0 +1,13 @@
+1. ps aux > ~/processes.txt
+2.ps aux | grep sshd
+
+3./home/osama/Pictures/Screenshots/Screenshot from 2025-04-08 14-38-15.png
+4.sudo apt install apache2
+ sudo nano /var/www/html/index.html
+
+5.sudo apt install openssh-server -y
+  sudo systemctl start  ssh
+  sudo systemctl status ssh
+
+6.sudo systemctl restart cron
+7.tar -czvf ~/archive.tar.gz /var/log
