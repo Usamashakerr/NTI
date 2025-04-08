@@ -11,3 +11,8 @@
 
 6.sudo systemctl restart cron
 7.tar -czvf ~/archive.tar.gz /var/log
+8.tar -xzvf ~/archive.tar.gz -C ~/logs_backup/extractedlogs
+9. tar -cvf /tmp/archive.tar  /etc/ssh
+10. gzip ~/processes.txt 
+11.ls -lh ~/processes.txt ~/processes.txt.gz
+12.
