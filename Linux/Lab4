@@ -20,5 +20,12 @@
 14.sudo apt remove vim 
 15.wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.23.tar.xz
 16.sudo curl https://www.google.com -o google.html
-17.
-
+17. sudo useradd sayed 
+    echo 'sayed:man7o'
+    sudo visudo 'then edit'
+    sudo apt update
+    sudo apt upgrade
+18.sudo ssh-keygen -t rsa -b 4096 -C "usamashakerr@gmail.com"
+19.sudo ssh-copy-id -i /home/sayed/keyss.pub osama@192.168.1.8 <---------
+20.ssh osama@192.168.1.8
+21.scp home/sayed/archived.tar.gz osama@192.168.1.8:/home/osama/
