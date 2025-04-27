@@ -96,7 +96,7 @@ def stop_yarn():
 
 # Manage
 tk.Button(frame_manage, text='Create Directory', command=create_dir, width=30, bg="#74b9ff", fg="white").pack(pady=5)
-tk.Button(frame_manage, text='Delete /lab1 Directory', command=delete_lab1, width=30, bg="#d63031", fg="white").pack(pady=5)
+tk.Button(frame_manage, text='Delete Directory', command=delete_lab1, width=30, bg="#d63031", fg="white").pack(pady=5)
 
 # Transfer
 tk.Button(frame_transfer, textS='Upload Files (Local to HDFS)', command=upload_local_hdfs, width=30, bg="#00b894", fg="white").pack(pady=5)
