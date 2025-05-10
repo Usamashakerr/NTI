@@ -1,0 +1,35 @@
+Commands
+
+To run zookeeper:
+(base) [bigdata@localhost kafka_2.12-2.5.0]$ cd $KAFKA_HOME
+(base) [bigdata@localhost kafka_2.12-2.5.0]$ bin/zookeeper-server-start.sh config/zookeeper.properties
+
+To run kafka:
+(base) [bigdata@localhost kafka_2.12-2.5.0]$ cd $KAFKA_HOME
+(base) [bigdata@localhost kafka_2.12-2.5.0]$ bin/kafka-server-start.sh config/server.properties
+
+Starting Kafka Agent:
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic flume-logs
+
+Flume to Kafka Agent:
+(base) [bigdata@localhost apache-flume-1.7.0-bin]$ nano /home/bigdata/apache-flume-1.7.0-bin/conf/file-to-kafka.conf
+(base) [bigdata@localhost apache-flume-1.7.0-bin]$  bin/flume-ng agent \--conf conf \--conf-file conf/file-to-kafka.conf \--name agent \-Dflume.root.logger=INFO,console
+
+Kafka Stream:
+(base) [bigdata@localhost kafka_2.12-2.5.0]$ cd $KAFKA_HOME
+(base) [bigdata@localhost kafka_2.12-2.5.0]$ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic flume-logs --from-beginning
+Starting HDFS and Yarn:
+(base) [bigdata@localhost Desktop]$ start-all.sh
+
+
+Kafka to HDFS Agent:
+(base) [bigdata@localhost apache-flume-1.7.0-bin]$  bin/flume-ng agent \--conf conf \--conf-file conf/kafka-to-hdfs.conf \--name agent2 \-Dflume.root.logger=INFO,console
+
+Spark Stream:
+(base) [bigdata@localhost Desktop]$ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.1 Sparkaf.py 
+
+
+
+
+
+
